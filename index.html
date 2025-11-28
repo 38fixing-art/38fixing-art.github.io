@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>38Fixers — Empowering Women Through Repair</title>
+  <meta name="description" content="38Fixers (强记女工) — Women empowerment through repair training, on-site services and community programs. We commit to reinvesting 51%+ of surplus into our mission." />
+  <link rel="icon" href="assets/favicon.ico" />
+  <style>
+    :root{
+      --blue:#4A90E2;
+      --pink:#F5ADFF;
+      --text:#222;
+      --muted:#666;
+      --card:#fff;
+      --bg:#fbfbfb;
+      --maxw:1100px;
+      --radius:12px;
+      font-family:Inter, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);line-height:1.55}
+    .container{max-width:var(--maxw);margin:30px auto;padding:0 20px}
+    header{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .brand{display:flex;align-items:center;gap:14px}
+    .brand img.logo-text{height:34px}
+    .brand img.logo-graphic{height:56px;border-radius:8px}
+    nav{display:flex;gap:18px;align-items:center}
+    nav a{color:var(--text);text-decoration:none;font-weight:600}
+    .lang-switch{display:flex;gap:6px}
+    .lang-switch button{border:none;padding:8px 12px;border-radius:8px;color:#fff;cursor:pointer;font-weight:600}
+    .lang-en-btn{background:var(--blue)}
+    .lang-zh-btn{background:var(--pink)}
+    main{margin-top:28px}
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    @media (max-width:880px){ .hero{grid-template-columns:1fr} .brand img.logo-graphic{display:none} }
+    .hero-card{background:linear-gradient(180deg,#fff,#fff);padding:26px;border-radius:14px;box-shadow:0 6px 18px rgba(0,0,0,0.06)}
+    h1{margin:4px 0 12px;font-size:28px}
+    p.lead{color:var(--muted);margin:0 0 14px}
+    .cta{display:flex;gap:10px;margin-top:12px}
+    .btn{padding:10px 16px;border-radius:10px;border:0;cursor:pointer;font-weight:700}
+    .btn-primary{background:var(--blue);color:#fff}
+    .btn-ghost{background:transparent;border:2px solid var(--pink);color:var(--text)}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.04);margin-bottom:18px}
+    section h2{margin:0 0 10px;font-size:20px}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media (max-width:880px){ .grid-3{grid-template-columns:1fr} }
+    .gallery img{width:100%;height:auto;border-radius:10px;display:block}
+    footer{margin-top:28px;padding:20px 0;text-align:center;color:var(--muted)}
+    /* bilingual */
+    .lang-zh{display:none}
+    /* small details */
+    .muted{color:var(--muted);font-size:14px}
+    .contact-line{display:flex;gap:10px;align-items:center}
+    .contact-line strong{width:86px;display:inline-block}
+    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f1f1;font-weight:700}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <!-- place your logos into assets/ and update filenames if needed -->
+        <img src="assets/graphic-logo.png" alt="38Fixers logo" class="logo-graphic" />
+        <img src="assets/text-logo.png" alt="38Fixers wordmark" class="logo-text" />
+      </div>
+
+      <nav>
+        <a href="#mission" class="lang-en">About</a>
+        <a href="#services" class="lang-en">Services</a>
+        <a href="#team" class="lang-en">Team</a>
+        <a href="#contact" class="lang-en">Contact</a>
+
+        <a href="#mission" class="lang-zh">关于我们</a>
+        <a href="#services" class="lang-zh">服务</a>
+        <a href="#team" class="lang-zh">团队</a>
+        <a href="#contact" class="lang-zh">联系</a>
+
+        <div class="lang-switch" style="margin-left:12px">
+          <button class="lang-en-btn" onclick="switchLang('en')">English</button>
+          <button class="lang-zh-btn" onclick="switchLang('zh')">中文</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <div class="hero-card">
+          <h1 class="lang-en">38Fixers — Empowering Women Through Repair</h1>
+          <h1 class="lang-zh">38Fixers（强记女工）— 以维修赋能女性</h1>
+
+          <p class="lead lang-en">We provide practical repair training, on-site installation and maintenance services, and create employment opportunities for women in a male-dominated industry. We publicly commit to reinvesting at least <strong>51% of our annual surplus</strong> into our mission.</p>
+          <p class="lead lang-zh">我们提供实用维修培训、上门安装与维护服务，并为处于男性主导行业的女性创造就业机会。我们公开承诺将每年至少 <strong>51% 的盈余</strong>投入企业使命。</p>
+
+          <div class="cta">
+            <a class="btn btn-primary lang-en" href="#contact">Get in touch</a>
+            <a class="btn btn-primary lang-zh" href="#contact">联系我们</a>
+
+            <button class="btn btn-ghost lang-en" onclick="scrollToSection('team')">Meet the Team</button>
+            <button class="btn btn-ghost lang-zh" onclick="scrollToSection('team')">团队介绍</button>
+          </div>
+
+          <div style="margin-top:18px" class="muted">
+            <div class="lang-en">Followers on Chinese social platforms: <strong>800,000+</strong></div>
+            <div class="lang-zh">中国社交平台粉丝：<strong>80 万+</strong></div>
+          </div>
+        </div>
+
+        <div>
+          <div class="card">
+            <h3 class="lang-en">Public Commitment</h3>
+            <h3 class="lang-zh">社会责任承诺</h3>
+            <p class="lang-en">38Fixers publicly commits to reinvesting <strong>51% or more</strong> of annual surplus into social mission activities such as women’s technical training, community initiatives, and sustainable repair services. This commitment will be embedded into our governing documents.</p>
+            <p class="lang-zh">38Fixers 在此公开承诺：每年将 <strong>至少 51%</strong> 的盈余重新投入企业社会使命（如女性技术培训、社区项目和可持续维修服务），并会将此承诺写入公司治理文件。</p>
+          </div>
+
+          <div class="card">
+            <h3 class="lang-en">Quick Facts</h3>
+            <h3 class="lang-zh">关键信息</h3>
+            <ul class="muted" style="margin:8px 0 0;padding-left:18px">
+              <li class="lang-en">Founded: 2024 · Headquarters: Chengdu</li>
+              <li class="lang-zh">成立年份：2024 · 总部：成都</li>
+              <li class="lang-en">Served over 500 households to date</li>
+              <li class="lang-zh">已服务 500+ 家庭</li>
+              <li class="lang-en">Courses & training delivered to hundreds of women</li>
+              <li class="lang-zh">为数百名女性提供技能培训</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services -->
+      <section id="services" style="margin-top:30px">
+        <div class="card">
+          <h2 class="lang-en">What We Do</h2>
+          <h2 class="lang-zh">我们提供的服务</h2>
+
+          <div class="grid-3" style="margin-top:12px">
+            <div class="card">
+              <h3 class="lang-en">Training for Women</h3>
+              <h3 class="lang-zh">女性技能培训</h3>
+              <p class="lang-en muted">Hands-on courses: electrician basics, appliance cleaning, vehicle emergency handling for female drivers.</p>
+              <p class="lang-zh muted">实操课程：电工基础、家电清洗、面向女性车主的汽车应急处理。</p>
+            </div>
+
+            <div class="card">
+              <h3 class="lang-en">On-site Services</h3>
+              <h3 class="lang-zh">上门服务</h3>
+              <p class="lang-en muted">Installation, electrical inspection, appliance repair, smart lock installation and maintenance.</p>
+              <p class="lang-zh muted">安装、线路检测、家电维修、智能锁安装与维护。</p>
+            </div>
+
+            <div class="card">
+              <h3 class="lang-en">Corporate Partnerships</h3>
+              <h3 class="lang-zh">企业合作</h3>
+              <p class="lang-en muted">B2B trainings, service contracts and co-created repair awareness programs.</p>
+              <p class="lang-zh muted">企业培训、服务合同与联合开展的维修推广活动。</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team -->
+      <section id="team" style="margin-top:18px">
+        <div class="card">
+          <h2 class="lang-en">Our Team</h2>
+          <h2 class="lang-zh">我们的团队</h2>
+
+          <p class="lang-en muted">Our women-led repair and installation team brings together skilled technicians dedicated to delivering professional, reliable, and safe services. These images show our team in action — electrical checks, appliance repairs, installations and safe on-site operations.</p>
+          <p class="lang-zh muted">我们的女子维修安装团队由多位经验丰富的技术工人组成，致力于提供专业、可靠、安全的服务。以下照片展示了我们的现场工作：电路检测、家电维修、安装施工与安全现场操作。</p>
+
+          <div class="gallery" style="margin-top:14px">
+            <!-- place work images into assets/ and ensure filenames match -->
+            <img src="assets/team-group.jpg" alt="Team group photo" />
+            <div style="height:16px"></div>
+            <img src="assets/work-1.jpg" alt="On-site work 1" />
+            <div style="height:12px"></div>
+            <img src="assets/work-2.jpg" alt="On-site work 2" />
+            <div style="height:12px"></div>
+            <img src="assets/work-3.jpg" alt="On-site work 3" />
+            <div style="height:12px"></div>
+            <img src="assets/work-4.jpg" alt="On-site work 4" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Impact / Commitment block -->
+      <section id="impact" style="margin-top:18px">
+        <div class="card">
+          <h2 class="lang-en">Impact & Evidence</h2>
+          <h2 class="lang-zh">影响力与佐证</h2>
+
+          <p class="lang-en muted">In 2024, 38Fixers delivered training to hundreds of women and completed over 500 service cases. We have also partnered with corporate and smart-home brands for installation projects and quality service delivery.</p>
+          <p class="lang-zh muted">2024 年，38Fixers 为数百名女性提供培训，并完成 500+ 服务案例。我们与企业与智能家居品牌合作，提供安装与高质量服务。</p>
+
+          <p style="margin-top:12px" class="muted lang-en">You can use this public page as evidence of our commitment to reinvesting surplus into mission-driven activities.</p>
+          <p style="margin-top:12px" class="muted lang-zh">您可以将此页面作为公司将盈余再投入使命活动的公开证明。</p>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" style="margin-top:18px">
+        <div class="card">
+          <h2 class="lang-en">Contact Us</h2>
+          <h2 class="lang-zh">联系我们</h2>
+
+          <div style="margin-top:12px">
+            <p class="contact-line"><strong class="lang-en">Email:</strong><span class="lang-en"> team@38fixers.com</span><strong class="lang-zh" style="display:none">邮箱：</strong><span class="lang-zh" style="display:none"> team@38fixers.com</span></p>
+
+            <p class="contact-line"><strong class="lang-en">Address:</strong><span class="lang-en"> No. 957, 16 Julong Road, Wuhou District, Chengdu, Sichuan Province, China.</span><strong class="lang-zh" style="display:none">地址：</strong><span class="lang-zh" style="display:none"> 中国四川省成都市武侯区聚龙路16号957</span></p>
+
+            <p style="margin-top:12px" class="muted lang-en">If you need any documents for verification (English business license, financial statement, articles of association, or a signed public commitment letter), please email us at the address above and we will provide them promptly.</p>
+            <p style="margin-top:12px" class="muted lang-zh">如需验证文件（英文营业执照、财务报表、公司章程或签名的公开承诺函），请通过上述邮箱联系我们，我们会及时提供。</p>
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div class="muted">© <span id="year"></span> 38Fixers — Empowering Women Through Repair</div>
+    </footer>
+  </div>
+
+  <script>
+    // language switch
+    function switchLang(lang){
+      document.documentElement.setAttribute('data-lang', lang);
+      const en = document.querySelectorAll('.lang-en');
+      const zh = document.querySelectorAll('.lang-zh');
+      if(lang === 'en'){
+        en.forEach(e => e.style.display = '');
+        zh.forEach(e => e.style.display = 'none');
+      } else {
+        en.forEach(e => e.style.display = 'none');
+        zh.forEach(e => e.style.display = 'block');
+      }
+    }
+    // default
+    switchLang('en');
+
+    // small helpers
+    function scrollToSection(id){
+      const el = document.getElementById(id);
+      if(el) el.scrollIntoView({behavior:'smooth'});
+    }
+
+    // copyright year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
